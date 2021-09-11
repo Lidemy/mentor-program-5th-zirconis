@@ -11,3 +11,9 @@
 7. `git push origin week1` 把作業推（上傳）到 <week1> 這個分支
 8. 到 GitHub repo 發 PR（open pull request），取得連結，回到學習系統送出。等助教改作業。
 
+## 助教改完作業之後
+
+1. 助教會把遠端的 week1 `merge` 到遠端的 master
+2. Local 端切換到 branch master：`git checkout master`
+3. 把助教 merge 後的內容（最新版）抓回來local 端：`git pull origin master`
+4. 刪除已經 merge 的 branch (week1)：`git branch -d week1`
